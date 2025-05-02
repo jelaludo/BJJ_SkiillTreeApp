@@ -10,12 +10,6 @@ function App() {
     <div className="app">
       <h1>BJJ Skill Tree: Fundamentals (Moebius Strip)</h1>
       <FundamentalsGraph />
-      <BJJSkillTree />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
     </div>
   );
 }

@@ -47,4 +47,18 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Custom style for react-force-graph-3d tooltip */
+.graph-tooltip {
+  pointer-events: none !important;
+  font-size: min(2.5vw, 2.5vh, 28px) !important; /* Responsive font size, max 28px */
+  background: rgba(30, 30, 30, 0.95) !important;
+  color: #ffd86b !important;
+  border-radius: 8px !important;
+  padding: 10px 24px !important;
+  font-weight: 700 !important;
+  z-index: 9999 !important;
+  transform: translateY(-40px) !important; /* Move tooltip above the pointer */
+  box-shadow: 0 2px 8px #000a !important;
 } 

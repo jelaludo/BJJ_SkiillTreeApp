@@ -94,3 +94,44 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Try to catch any tooltip class */
+.graph-tooltip,
+.scene-tooltip,
+.force-graph-tooltip,
+div[style*="pointer-events: none"][style*="position: absolute"] {
+  pointer-events: none !important;
+  font-size: min(2.5vw, 2.5vh, 28px) !important;
+  background: rgba(30, 30, 30, 0.95) !important;
+  color: #ffd86b !important;
+  border-radius: 8px !important;
+  padding: 10px 24px !important;
+  font-weight: 700 !important;
+  z-index: 9999 !important;
+  transform: translateY(-40px) !important;
+  box-shadow: 0 2px 8px #000a !important;
+}
+
+/* Force all tooltips to be large for debugging */
+* {
+  font-size: 32px !important;
+}
+
+#bjj-skilltree-tooltip {
+  position: fixed !important;
+  left: 50% !important;
+  top: 60px !important;
+  transform: translateX(-50%) !important;
+  pointer-events: none !important;
+  font-size: 32px !important;
+  background: #222 !important;
+  color: #ffd86b !important;
+  border-radius: 8px !important;
+  padding: 16px 32px !important;
+  font-weight: 900 !important;
+  z-index: 99999 !important;
+  box-shadow: 0 2px 8px #000a !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  display: block !important;
+}
